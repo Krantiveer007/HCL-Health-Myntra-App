@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  background: #e6e6e6;
+  /* font-family: "Neuzeit Grotesk Regular", Arial, Helvetica, sans-serif !important; */
+  height: 100%;
+  min-height: 100%;
+}
+
+html {
+  background: white;
+  height: 100%;
+}
+
+.row {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.filterSelectionChecbox {
+  cursor: pointer;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: white!important;
+  border: 1px solid #979da6;
+  box-shadow: none!important;
+  padding: 0px;
+  vertical-align: sub;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+}
+.filterSelectionChecbox:checked {
+  border: none;
+  background-color: #ff3f6c!important;
+}
+.filterSelectionChecbox:checked:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  width: 10px;
+  height: 6px;
+  border-color: #fff;
+  border-style: none none solid solid;
+  border-width: 3px;
+  transition: all .3s ease-in-out;
+  transform: rotate(-45deg);
+}
+.filterSelectionChecbox:disabled{
+  background-color: #eeeff0!important;
+}
+.modal-content {
+  background-color: #fde3f3!important;
+}
