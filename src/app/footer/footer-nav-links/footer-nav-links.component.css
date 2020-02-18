@@ -1,0 +1,21 @@
+.navLinkList,
+.usefulLinkList {
+  display: block;
+  margin-right: 25px;
+}
+
+.navLinkList,
+.usefulLinkList {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.navLinks,
+.usefulLinks {
+    margin-top: 25px;
+}
+.navLinks a,
+.usefulLinks a {
+    text-decoration: none;
+    color: #696b79;
+    font-size: 15px;
+  }

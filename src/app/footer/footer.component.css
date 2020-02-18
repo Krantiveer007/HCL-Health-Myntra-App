@@ -1,0 +1,14 @@
+.pSearchHeader {
+  margin-bottom: 30px;
+}
+
+.pSearchLink a {
+  text-decoration: none;
+  color: #696b79;
+  font-size: 15px;
+}
+
+.pSearchLink a:after {
+  content: "|";
+  margin-left: 3px;
+}

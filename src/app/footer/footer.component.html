@@ -1,0 +1,42 @@
+<div class="row" style="border-bottom: 1px solid #eaeaec;">
+    <div class="col-3" style="padding: 0px;">
+        <app-footer-nav-links></app-footer-nav-links>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-3">
+        <h6 style="margin-bottom: 25px;">EXPERIENCE MYNTRA APP ON MOBILE</h6>
+        <div style="margin-bottom: 25px;">
+            <img src="{{googlePlayIcon}}" style="height: 42px; margin-right: 10px;">
+            <img src="{{appleStoreIcon}}" style="height: 42px;">
+        </div>
+        <h6 style="margin-bottom: 15px;">KEEP IN TOUCH</h6>
+        <div style="display: flex;">
+            <div *ngFor="let app of socialApps" style="margin-right: 15px;">
+                <img src="{{app}}" style="width: 20px; height: 20px;">
+            </div>
+        </div>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-3">
+        <div *ngFor="let key of objectKeys(myntraFeatures)" style="margin-bottom: 30px;">
+            <img src="{{myntraFeatures[key].src}}" style="width: 48px; height: 49px; margin-right: 10px;">
+            <span style="font-weight: bold;">{{myntraFeatures[key].keyFeature}}</span>
+            <span style="color: #696b79">{{myntraFeatures[key].featureDescription}}</span>
+        </div>
+    </div>
+    <div class="col-1"></div>
+</div>
+<div class="row">
+    <h6 class="pSearchHeader">POPULAR SEARCHES</h6>
+    <div class='pSearchLink'>
+        <a href="/{{item}}" *ngFor="let item of popularSearches">
+            {{item}}
+        </a>
+    </div>
+</div>
+<div class="row" style="color: #696b79;">
+    <div class="col-3 mr-auto" style="margin-top: 30px;  padding: 0px;">In case of any concern,
+        <a href="Contact Us">Contact Us</a>
+    </div>
+    <div class="col-3" style="margin-top: 30px;  padding: 0px;">© 2020 www.myntra.com. All rights reserved.</div>
+</div>

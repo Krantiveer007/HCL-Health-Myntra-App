@@ -1,0 +1,31 @@
+<div class="row app-header">
+    <div class="col-1">
+        <img src="{{appLogo}}" class="app-logo">
+    </div>
+    <div class="col-5">
+        <ul>
+            <li *ngFor="let navLink of navlinks" class="navLinkList">
+                {{navLink}}
+            </li>
+        </ul>
+    </div>
+    <div class="col-4" style="padding-left: 0; padding-right: 30px;">
+        <div class="searchContainer">
+            <img src="{{searchIcon}}" class="searchIcon">
+            <input type="text" class="form-control" placeholder="Search for products, brands and more">
+        </div>
+    </div>
+    <div class="col-2">
+        <ul>
+            <li *ngFor="let userOption of userOptions" class="userOptions">
+                <span class="fa-span">
+                    <fa-icon [icon]="faUser" *ngIf="userOption === 'Profile'"></fa-icon>
+                    <fa-icon [icon]="faHeart" *ngIf="userOption === 'Wishlist'"></fa-icon>
+                    <fa-icon [icon]="faShoppingBag" *ngIf="userOption === 'Bag'"></fa-icon>
+                    {{userOption}}
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row taxBanner">- Prices are inclusive of all taxes -</div>
